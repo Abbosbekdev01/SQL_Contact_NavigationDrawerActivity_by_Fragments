@@ -10,6 +10,4 @@ interface MyDbInterface {
 
     fun deleteContact(myContact: MyContact)
 
-    fun updateContact(myContact: MyContact)
-
 }

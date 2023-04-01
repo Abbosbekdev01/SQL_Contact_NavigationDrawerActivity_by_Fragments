@@ -19,10 +19,6 @@ class ContactAdapter(val list: ArrayList<MyContact>, val rvClick: RvClick) :
                 rvClick.deleteContact(myContact, position)
                 true
             }
-
-            itemRvBinding.root.setOnClickListener {
-                rvClick.updateContact(myContact, position)
-            }
         }
     }
 
@@ -39,6 +35,5 @@ class ContactAdapter(val list: ArrayList<MyContact>, val rvClick: RvClick) :
 
 interface RvClick {
     fun deleteContact(deleteContact: MyContact, position: Int)
-    fun updateContact(updateContact: MyContact, position: Int)
 }
 

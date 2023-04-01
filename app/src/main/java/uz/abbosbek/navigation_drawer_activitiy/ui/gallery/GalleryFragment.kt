@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import uz.abbosbek.navigation_drawer_activitiy.adapters.ContactAdapter
 import uz.abbosbek.navigation_drawer_activitiy.adapters.RvClick
@@ -44,10 +45,11 @@ class GalleryFragment : Fragment(),RvClick {
     }
 
     override fun deleteContact(deleteContact: MyContact, position: Int) {
+        myDbHelper.deleteContact(deleteContact)
+        list.remove(deleteContact)
+        contactAdapter.notifyItemRemoved(position)
 
-    }
-
-    override fun updateContact(updateContact: MyContact, position: Int) {
+        Toast.makeText(requireContext(), "Deleted", Toast.LENGTH_SHORT).show()
 
     }
 }

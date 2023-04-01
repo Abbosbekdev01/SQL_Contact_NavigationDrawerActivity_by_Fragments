@@ -104,14 +104,6 @@ class MyDbHelper(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, VE
         database.close()
     }
 
-    override fun updateContact(myContact: MyContact) {
-        val database = this.writableDatabase
-        val contentValues = ContentValues()
-        contentValues.put(ID, myContact.id)
-        contentValues.put(NAME, myContact.name)
-        contentValues.put(NUMBER, myContact.number)
-    }
-
     companion object{
         private var dbHelper:MyDbHelper? = null
         fun init(context: Context){

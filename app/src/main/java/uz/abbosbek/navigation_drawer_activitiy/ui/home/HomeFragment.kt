@@ -1,14 +1,10 @@
 package uz.abbosbek.navigation_drawer_activitiy.ui.home
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import uz.abbosbek.navigation_drawer_activitiy.adapters.ContactAdapter
 import uz.abbosbek.navigation_drawer_activitiy.adapters.RvClick
 import uz.abbosbek.navigation_drawer_activitiy.databinding.FragmentHomeBinding
@@ -53,10 +49,6 @@ class HomeFragment : Fragment(), RvClick {
 //    }
 
     override fun deleteContact(deleteContact: MyContact, position: Int) {
-
-    }
-
-    override fun updateContact(updateContact: MyContact, position: Int) {
 
     }
 }

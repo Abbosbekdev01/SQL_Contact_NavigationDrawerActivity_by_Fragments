@@ -74,7 +74,7 @@
              android:layout_height="70dp"
              android:foreground="?attr/selectableItemBackground"
              android:clickable="true"
-             android:backgroundTint="#F8FB98"
+             android:backgroundTint="#9FAEFF"
              app:cardElevation="8dp"
              app:cardCornerRadius="12dp"
              app:cardUseCompatPadding="true"
